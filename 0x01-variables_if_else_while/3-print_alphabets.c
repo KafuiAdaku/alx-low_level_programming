@@ -9,6 +9,7 @@ int main(void)
 {
 	int a;
 	int A;
+
 	a = 'a';
 
 	A = 'A';
