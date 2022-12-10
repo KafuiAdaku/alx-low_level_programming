@@ -16,7 +16,7 @@ int main(void)
 		{
 			for (inner = 0; inner < 10; inner++)
 			{
-				if ((outer != mid != inner) && ((outer < mid) && (mid < inner)))
+				if ((outer < mid) && (mid < inner))
 				{
 					putchar(outer + '0');
 					putchar(mid + '0');
