@@ -21,12 +21,11 @@ int main(void)
 					putchar(outer + '0');
 					putchar(mid + '0');
 					putchar(inner + '0');
-					if ((outer == 7) && (mid == 9) && (inner == 9))
+					if (outer != 7)
 					{
-						break;
+						putchar(',');
+						putchar(' ');
 					}
-					putchar(',');
-					putchar(' ');
 				}
 			}
 		}
