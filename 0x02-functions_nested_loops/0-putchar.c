@@ -9,9 +9,10 @@ int main(void)
 char outpt[] = "_putchar\n";
 int i = 0;
 
-while (outpt != '\n')
+while (outpt[i] != '\0')
 {
 	char c = outpt[i];
+
 	_putchar(c);
 	i++;
 }
