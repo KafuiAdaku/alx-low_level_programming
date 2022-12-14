@@ -5,6 +5,7 @@
  * @a: first int
  * @b: second int
  * @c: third int
+ * @largest: largest of the three integers
  * Return: largest number
  */
 
