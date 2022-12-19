@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	srand (time(NULL));
 	int sum;
 	char c;
 
+	srand(time(NULL));
 	while (sum <= 2645)
 	{
 		c = rand() % 127;
