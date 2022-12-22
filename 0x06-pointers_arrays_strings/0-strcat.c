@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * *_strcat - concatenates two strings
- * @*dest: pointer to a variable of type char
- * @*src: pointer to a variable of type char
+ * @dest: pointer to a variable of type char
+ * @src: pointer to a variable of type char
  * Return: pointer is returned to the resulting string
  */
 
