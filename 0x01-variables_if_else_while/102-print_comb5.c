@@ -9,27 +9,23 @@ int main(void)
 {
 int a, b, c, d;
 
-for (a = 48; a <= 57; a++)
+for (a = 0; a < 10; a++)
 {
-	for (b = 48; b <= 57; b++)
+	for (b = 0; b < 10; b++)
 	{
-		for (c = 48; c <= 57; c++)
+		for (c = 0; c < 10; c++)
 		{
-			for (d = 48; d <= 57; d++)
+			for (d = 0; d < 10; d++)
 			{
-				if (((c + d) > (a + b) && (c >= a)) || (a < c))
+				if ((a + b) < (c + d))
 				{
-					putchar(a);
-					putchar(b);
+					putchar(a + '0');
+					putchar(b + '0');
 					putchar(' ');
-					putchar(c);
-					putchar(d);
+					putchar(c + '0');
+					putchar(d + '0');
 
-					if (((a + b + c + d) == 227) && (c == 57))
-					{
-						break;
-					}
-					else
+					if (!(a == 9 && b == 8 && c == 9 && d == 9))
 					{
 						putchar(',');
 						putchar(' ');
