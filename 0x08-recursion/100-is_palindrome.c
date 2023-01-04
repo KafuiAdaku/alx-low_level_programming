@@ -36,7 +36,7 @@ int is_palind_recursive(char *s, int i, int j)
 	return (is_palind_recursive(s, i + 1, j - 1));
 }
 /**
- * is_palindrom - checks if a string is a palindrome
+ * is_palindrome - checks if a string is a palindrome
  * @s: pointer to string.
  * Return: 1 if string is palindrome, else 0
  */
