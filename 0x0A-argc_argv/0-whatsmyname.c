@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Prints the program name, followed by a new line.
- * @arcg: The number of arguments supplied to the program.
+ * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  * Return: Always 0.
  */
