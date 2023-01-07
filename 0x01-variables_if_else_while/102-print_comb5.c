@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 /**
  * main - Entry point
  * Description: Printing all possible combibnationof two-digit numbers.
@@ -7,30 +6,23 @@
  */
 int main(void)
 {
-int a, b, c, d;
+int a, b;
 
-for (a = 0; a < 10; a++)
+for (a = 0; a < 100; a++)
 {
-	for (b = 0; b < 10; b++)
+	for (b = 0; b < 100; b++)
 	{
-		for (c = 0; c < 10; c++)
+		if (a < b)
 		{
-			for (d = 0; d < 10; d++)
+			putchar((a / 10) + 48);
+			putchar((a % 10) + 48);
+			putchar(' ');
+			putchar((b / 10) + 48);
+			putchar((b % 10) + 48);
+			if (!((x == 98) & (b == 99)))
 			{
-				if ((a + b) < (c + d))
-				{
-					putchar(a + '0');
-					putchar(b + '0');
-					putchar(' ');
-					putchar(c + '0');
-					putchar(d + '0');
-
-					if (!(a == 9 && b == 8 && c == 9 && d == 9))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
