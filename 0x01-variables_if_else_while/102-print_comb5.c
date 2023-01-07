@@ -19,7 +19,7 @@ for (a = 0; a < 100; a++)
 			putchar(' ');
 			putchar((b / 10) + 48);
 			putchar((b % 10) + 48);
-			if (!((x == 98) & (b == 99)))
+			if (!((a == 98) & (b == 99)))
 			{
 				putchar(',');
 				putchar(' ');
