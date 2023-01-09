@@ -20,6 +20,8 @@ char *_strdup(char *str)
 		;
 
 	ns = malloc(1 + sizeof(char) * i);
+	if (ns == NULL)
+		return (NULL);
 
 	for (c = 0; c < i; c++)
 	{
