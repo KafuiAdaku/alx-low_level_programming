@@ -18,15 +18,15 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (hash_tab_temp == NULL)
 		return (NULL);
 
-	hash_tab_temp -> size = size;
-	hash_tab_temp -> array = malloc(sizeof(hash_node_t*) * size);
+	hash_tab_temp->size = size;
+	hash_tab_temp->array = malloc(sizeof(hash_node_t *) * size);
 
-	if (hash_tab_temp -> array == NULL)
+	if (hash_tab_temp->array == NULL)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
 	{
-		hash_tab_temp -> array[i] = NULL;
+		hash_tab_temp->array[i] = NULL;
 	}
 
 	return (hash_tab_temp);
