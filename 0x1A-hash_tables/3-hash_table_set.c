@@ -22,7 +22,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	value_dup = strdup(value);
 	if (value_dup == NULL)
 		return (0);
-	hash_index = hash_djb2((const unsigned char *) key);
+	hash_index = key_index((const unsigned char *) key, ht->size);
 
 	for (i = hash_index; ht->array[i]; i++)
 	{
