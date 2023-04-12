@@ -25,7 +25,7 @@ void hash_table_print(const hash_table_t *ht)
 			{
 				if (comma_flag == 1)
 					printf(", ");
-				printf("'%s' : '%s'", node_temp->key, node_temp->value);
+				printf("'%s': '%s'", node_temp->key, node_temp->value);
 				node_temp = node_temp->next;
 				comma_flag = 1;
 			}
