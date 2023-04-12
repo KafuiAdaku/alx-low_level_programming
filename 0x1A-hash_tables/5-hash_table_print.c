@@ -21,16 +21,14 @@ void hash_table_print(const hash_table_t *ht)
 		if (ht->array[i])
 		{
 			node_temp = ht->array[i];
-			if (comma_flag == 1)
-				printf(", ");
 			while (node_temp)
 			{
+				if (comma_flag == 1)
+					printf(", ");
 				printf("'%s' : '%s'", node_temp->key, node_temp->value);
 				node_temp = node_temp->next;
-				if (node_temp)
-					printf(", ");
+				comma_flag = 1;
 			}
-			comma_flag = 1;
 		}
 	}
 	printf("}\n");
