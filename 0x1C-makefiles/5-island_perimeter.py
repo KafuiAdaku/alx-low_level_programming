@@ -31,7 +31,7 @@ def island_perimeter(grid):
                     perimeter += 1
                 # check right boundary
                 if col == width - 1 or grid[row][col + 1] == 0:
-                        perimeter += 1
+                    perimeter += 1
                 # check upper boundary
                 if row == 0 or grid[row - 1][col] == 0:
                     perimeter += 1
