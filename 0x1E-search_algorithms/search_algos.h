@@ -17,4 +17,5 @@ int advanced_binary(int *array, size_t size, int value);
 void prt_arr (int *array, size_t start, size_t end);
 int _min(int a, int b);
 int bin_search(int *array, int left, int right, int value);
+int adbin_search(int *array, size_t left, size_t right, int value);
 #endif
