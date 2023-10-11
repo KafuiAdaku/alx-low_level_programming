@@ -39,7 +39,7 @@ int adbin_search(int *array, size_t left, size_t right, int value)
 {
 	size_t mid = (left + right) / 2;
 
-	if (left > right)
+	if (array == NULL || left > right)
 		return (-1); /*Value not found in the subarray*/
 
 	/*Print sub array*/
